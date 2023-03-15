@@ -1,23 +1,33 @@
-* {
-    max-width: 640px;
-
-}
-
 body {
-    margin: 0;
-    box-sizing: content-box;
+    background: url("src/ciel-etoile.jpg");
+}
+
+header {
+    display: block;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(223, 61, 61);
+    text-align: center;
+    font-size: 3em;
+    margin-top: 2%;
+    height: 10%;
     width: 100%;
+    
 }
 
-.shop button {
-    background-color: blueviolet;
-    font-size: 20px;
-    color: white;
-    border: solid red 1px;
+.logo1 {
+    background-image: url("src/logo1.png");
+    background-repeat: no-repeat;
+    border-color: aqua;
+    border-width: 3em;
+    height: 6em;
+    margin-bottom: 5%;
+    padding-left: 10%;
+        
 }
 
-.shop {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
+h1, .logo1 {
+    align-items: center;
 }
