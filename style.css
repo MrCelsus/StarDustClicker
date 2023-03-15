@@ -1,0 +1,23 @@
+* {
+    max-width: 640px;
+
+}
+
+body {
+    margin: 0;
+    box-sizing: content-box;
+    width: 100%;
+}
+
+.shop button {
+    background-color: blueviolet;
+    font-size: 20px;
+    color: white;
+    border: solid red 1px;
+}
+
+.shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
