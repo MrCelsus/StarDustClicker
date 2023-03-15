@@ -7,3 +7,4 @@ Test GIT Local DEGRET Lucas
 Kevin
 Test Robin le plus beau
 Test Cyrielle
+Test Laure
