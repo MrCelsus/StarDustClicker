@@ -1,11 +1,7 @@
 
 
 *{
-<<<<<<< HEAD
  
-=======
-    /* background-color: rgb(49, 19, 19); */
->>>>>>> 0281035f7aa1709cf595394b2163b717e6dfd50e
     box-sizing: border-box;
     /* border: solid red 1px; */
     padding: 0;
@@ -146,32 +142,20 @@ body{
 }
 
 /*---------------- PROGRESS BAR -------------------*/
-.progressbar-position{
-    /* border: solid white 5px; */
-    display: flex;
-    justify-content: flex-end;
-}
-.progressbar-rocket{
-    /* border: solid blue 1px ; */
-    margin: 20px;
-    padding: 10px;
-    width: 5rem;
-    transform: rotate(90deg) translate(0%, -100%);
+.container-bar {
+    height: 2rem;
+    width: 15rem;
+    background-color: #0dd3da;
+    position: relative;
+    border: solid 5px white;
+    border-radius: 20px;
+    transform: rotate(-90deg) translate(-60%,800%);
 }
 
-.progressbar-wrapper{
- /* border: solid white 1px; */
- background-color: white;
- border-radius: 50px;
- padding: 1px;
- width: 130px;
-}
-
-.progressbar{
-/* border: solid purple 1px; */
-margin: 3px;
-background-color: crimson;
-border-radius: 50px;
-height: 10px;
-
+.container-bar .progress-bar{
+    position: absolute;
+    height: 100%;
+    background-color: blue;
+    width: 75%;
+    border-radius: 15px;
 }
