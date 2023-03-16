@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Do Hyeon' rel='stylesheet'>
+
     <title>Star Dust Clicker</title>
 </head>
 
@@ -13,30 +16,88 @@
     <header>
         <!-------------- FIRST BIG BLOCK = TITLE  -------------->
         <!-- First BLOCK = TITLE -->
-        <h1>STAR DUST CLICKER</h1>
-        <img src="logo.png" alt="logo">
+        <h1>STAR DUST</h1>
+        <img src="assets/logo.png" alt="logo" height="80px">
+        <h1>CLICKER</h1>
     </header>
+
     <main>
         <!------------------- SECOND BIG BLOCK = SWITCH SHOP TROPHY  ------------------------------------------->
         <!-- Second Block = SHOP -->
-        <div class=shop>
-            <button id="shop1"><img src="vaccum.png" alt="Vaccum" height="50px">Vaccum</button>
-            <button id="shop2"><img src="Fueltank.png" alt="Fuel-tank">Fuel Tank</button>
-            <button id="shop3"><img src="Wings.png" alt="Wings">Wings</button>
-            <button id="shop4"><img src="Reactor.png" alt="Reactor">Reactor</button>
+        <div class = shop-container>
+            <div class ="menu">
+                <p>SHOP</p> 
+                <p>TROPHY</p> 
+            </div>
+            <div>
+                <div class="shop">
+                    <img src="assets/Shop/vaccum.png" alt="Vaccum" height="50px">
+                    <p>100 000 <span style="color:goldenrod">SD</span></p>
+                    <p>54</p>
+                </div>
+                <div class="shop">
+                    <img src="assets/Shop/fuel_tank.png" alt="Fuel-tank" height="50px">
+                    <p>550 000 <span style="color:goldenrod">SD</span></p>
+                    <p>28</p>
+                </div>
+                <div class="shop">
+                    <img src="assets/Shop/wings.png" alt="Wings" height="50px">
+                    <p>12 500 000 <span style="color:goldenrod">SD</span></p>
+                    <p>28</p>
+                </div>
+                <div class="shop">
+                    <img src="assets/Shop/reactor.png" alt="Reactor" height="50px">
+                    <p>256 500 000 <span style="color:goldenrod">SD</span></p>
+                    <p>28</p>
+                </div>
+            </div>
         </div>
         <!-- Third Block = TROPHY -->
-        <div class=trophy>
-            <button id="trophy1" img src="Earth.png" alt="Earth">Earth</button>
-            <button id="trophy2" img src="Mars.png" alt="Mars">Mars</button>
-            <button id="trophy3" img src="Venus.png" alt="Venus">Venus</button>
-            <button id="trophy4" img src="Pluton.png" alt="Pluton">Pluton</button>
-            <button id="trophy5" img src="Moon.png" alt="Moon">Moon</button>
-
-
-
-        </div>
+       
+        <div class = trophy-container>
+                <div class= trophy>
+                    <img src="assets/Planets/planet_4.png" alt="Earth">
+                    <h3>Pluton</h3>
+                    <p>7 500 000 <span>SD</span></p>
+                </div>
+                <div class= trophy>
+                    <img src="assets/Planets/planet_3.png" alt="Earth">
+                    <h3>Vénus</h3>
+                    <p>5 500 000 <span>SD</span></p>
+                </div>
+                <div class= trophy>
+                    <img src="assets/Planets/Planet_2.png" alt="Earth">
+                    <h3>Moon</h3>
+                    <p>2 500 000 <span>SD</span></p>
+                </div>
+                <div class= trophy>
+                    <img src="assets/Planets/planet_1.png" alt="Earth">
+                    <h3>Earth</h3>
+                    <p>1 250 000 <span>SD</span></p>
+                </div>
+                <div class= trophy>
+                    <img src="assets/Planets/planet_5.png" alt="Earth">
+                    <h3>Mars</h3>
+                    <p>12 250 000 <span>SD</span></p>
+                </div>
+                <div class= trophy>
+                    <img src="assets/Planets/planet_6.png" alt="Earth">
+                    <h3>Neptune</h3>
+                    <p>22 500 000 <span>SD</span></p>
+                </div>
+                <div class= trophy>
+                    <img src="assets/Planets/planet_7.png" alt="Earth">
+                    <h3>Mercure</h3>
+                    <p>50 750 000 <span>SD</span></p>
+                </div>
+                <div class= trophy>
+                    <img src="assets/Planets/planet_8.png" alt="Earth">
+                    <h3>Uranus</h3>
+                    <p>100 000 000 <span>SD</span></p>
+                </div>
+         </div>
         <!--------------------------- THIRD BIG BLOCK = ROCKET ------------------------------------------------->
+    <div class ="ROCKET">
         <!-- Fourth Block = COUNTER  -->
         <div class="counter">
             <h3 id="Dust-counter">Counter</h3>
@@ -44,18 +105,21 @@
             <img src="stardust.png" alt="stardust">
         </div>
 
-        <!-- Fifth BLOCK = ROCKET CLICK -->
+        <!-- Fifth BLOCK = ROCKET CLICK = Laure-->
         <div class="rocket-part">
             <button><img src="assets/rocket.png" alt="rocket"></button>
 
         </div>
 
         <!-- Sixth BLOCK = PROGRESS BAR  -->
-        <div class="progress-bar">
-            <div title="Niv1" class="level">
-                <progress value="70%" max="100%"></progress>
+    <div class="progressbar-position">
+        <div class="progressbar-rocket">
+            <div class="progressbar-wrapper">
+                <div title="level" class="progressbar"></div>
             </div>
         </div>
+    </div>       
+
     </main>
     <footer>
 
