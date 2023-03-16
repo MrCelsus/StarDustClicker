@@ -1,7 +1,6 @@
 
 
 *{
- 
     box-sizing: border-box;
     /* border: solid red 1px; */
     padding: 0;
@@ -67,11 +66,53 @@ body{
 
 }
 
+.test{
+    display:grid; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center; 
+    background-color: #203753; 
+    font-size :20px; 
+    padding :0.5rem; 
+    margin :0.5rem;
+    border: solid #203753 1px;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px #118f95; 
+
+}
+
+#vacuum img , #fuel-tank img, #wings img, #reactor img{
+    grid-area: 1 / 1 / 2 / 2;
+    font-family: 'fira Sans', sans-serif;
+}
+#vacuum-name, #fueltank-name, #wings-name, #reactor-name { 
+    grid-area: 1 / 2 / 2 / 3; 
+    font-family: 'fira Sans', sans-serif;
+    justify-self: flex-start;
+}
+
+
+
+#vacuum-price, #fueltank-price, #wings-price, #reactor-price{ 
+    grid-area: 1 / 3 / 2 / 4; 
+    font-family: 'fira Sans', sans-serif;
+    justify-self: end;
+}
+
+#vacuum-count, #fueltank-count, #wings-count, #reactor-count{ 
+    grid-area: 1 / 4 / 2 / 5; 
+    font-family: 'fira Sans', sans-serif;
+    justify-self: end;
+
+}
+
 .shop img {
     padding: 0.5rem 1rem;
 }
 
-#vaccum , #fuel-tank,#wings, #reactor {
+#fuel-tank,#wings, #reactor {
     display:flex; 
     align-items :center; 
 }
