@@ -1,7 +1,7 @@
 
 
 *{
-    background-color: rgb(49, 19, 19);
+ 
     box-sizing: border-box;
     /* border: solid red 1px; */
     padding: 0;
@@ -9,14 +9,18 @@
     max-width: 640px;
 }
 
-header{
-    display: flex;
+header {
+    display : flex;
     font-family: 'Do Hyeon', sans-serif;
     align-items: center;
     justify-content: center;
     padding-top: 1rem;
-    
 }
+
+header img {
+    padding-left: 1rem; 
+}
+
 body{
     margin: 0;
     box-sizing: content-box;
@@ -114,11 +118,28 @@ body{
     margin: 0 auto;
 }
 
+/*--------------Counter--------------*/
+.counter {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
+.counter h2 {
+    font-size: 3rem;
 
+}
 
-
-
+.counter img {
+    padding-left: 0.5rem;
+    padding-top: 0.4rem;
+}
+.counter h3 {
+    font-size: 1.2rem;
+    color :#FFA800;
+    
+}
 
 /*---------------- PROGRESS BAR -------------------*/
 .progressbar-position{
