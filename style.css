@@ -52,12 +52,9 @@ body{
 
 .shop {
     display :flex; 
-    flex-direction: row ;
-    justify-content: space-between;
-    align-items :center; 
+    width: 100%;
     background-color: #203753; 
     color: white; 
-    font-size :20px; 
     padding :0.5rem; 
     margin :0.5rem; 
     border: solid #203753 1px;
@@ -66,12 +63,27 @@ body{
 
 }
 
+.name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 49%;
+}
+
+.price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 49%;
+}
+
+.price p { 
+    padding-left: 2rem;
+}
+
 .shop img {
     padding: 0.5rem 1rem;
 }
-
-
-
 
 .trophy-container{
     display: flex;
@@ -170,4 +182,26 @@ background-color: crimson;
 border-radius: 50px;
 height: 10px;
 
+}
+
+.rocket-part {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.rocket-part:hover {
+    transform:scale(1.2);
+}
+
+.fumée {
+    margin-top: 0rem;
+    padding-top: 0re;
 }
