@@ -1,7 +1,6 @@
 
 
 *{
- 
     box-sizing: border-box;
     /* border: solid red 1px; */
     padding: 0;
@@ -50,39 +49,57 @@ body{
     padding :15px; 
 }
 
-.shop {
-    display :flex; 
-    width: 100%;
+
+.vacuum , .fuel-tank, .wings, .reactor{
+    display:grid; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center; 
     background-color: #203753; 
-    color: white; 
+    font-size :20px; 
     padding :0.5rem; 
-    margin :0.5rem; 
+    margin :0.5rem;
     border: solid #203753 1px;
     border-radius: 0.5rem;
-    box-shadow: 2px 2px 2px #118f95
+    box-shadow: 2px 2px 2px #118f95; 
 
 }
 
-.name {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 49%;
+#vacuum img , #fuel-tank img, #wings img, #reactor img{
+    grid-area: 1 / 1 / 2 / 2;
+    font-family: 'fira Sans', sans-serif;
+    margin:0; 
+}
+#vacuum-name, #fueltank-name, #wings-name, #reactor-name { 
+    grid-area: 1 / 2 / 2 / 3; 
+    font-family: 'fira Sans', sans-serif;
+    justify-self: flex-start;
 }
 
-.price {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 49%;
+
+
+#vacuum-price, #fueltank-price, #wings-price, #reactor-price{ 
+    grid-area: 1 / 3 / 2 / 4; 
+    font-family: 'fira Sans', sans-serif;
+    justify-self: end;
 }
 
-.price p { 
-    padding-left: 2rem;
+#vacuum-count, #fueltank-count, #wings-count, #reactor-count{ 
+    grid-area: 1 / 4 / 2 / 5; 
+    font-family: 'fira Sans', sans-serif;
+    justify-self: end;
+
 }
 
 .shop img {
     padding: 0.5rem 1rem;
+}
+
+#fuel-tank,#wings, #reactor {
+    display:flex; 
+    align-items :center; 
 }
 
 .trophy-container{
