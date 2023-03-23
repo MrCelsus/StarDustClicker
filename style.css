@@ -284,6 +284,14 @@ body {
     width: 100%;
     border-radius: 15px;
 }
+#animation-progressbar{
+    animation: progress-animation 5s forwards;
+}
+
+@keyframes progress-animation{
+    0%{width: 0%;}
+    100%{widht:100%;}
+}
 
 /*-------------Rocket-----------*/
 
