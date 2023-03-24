@@ -190,7 +190,7 @@ const rocketClicker = document.querySelector('#rocket-clicker')
 let progressBarLength = 0;
 let finalProgress = 0;
 let numberOfStarDust = 0;
-const planets= [1000,25000,55000,750000,1250000,2250000,3250000,8500000];
+const planets= [100,250,550,750,1250,2250,3250,8500];
 const imgPlanet = document.getElementById(`imgPlanet${finalProgress}`)
 
 function setUpProgressBar(){
