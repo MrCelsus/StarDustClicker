@@ -115,3 +115,57 @@ vaccumPrice();
 fuelTankPrice();
 wingsPrice();
 reactorPrice()
+
+// ------------------- Fonction Onglet ----------------//
+
+const objectShop = document.querySelector('.shop-object');
+const trophyContainer = document.querySelector('.trophy-container');
+
+const menuShop = document.querySelector('.menuShop');
+const menuTrophy = document.querySelector('.menuTrophy');
+
+menuShop.addEventListener('click', function(){
+  objectShop.style.display = 'inline';
+  trophyContainer.style.display = 'none';
+});
+
+menuTrophy.addEventListener('click', function(){
+  objectShop.style.display = 'none';
+  trophyContainer.style.display = 'flex';
+  trophyContainer.style.flexWrap = "wrap";
+  trophyContainer.style.margin = "0 auto";
+  trophyContainer.style.fontFamily = "'fira Sans', sans-serif";
+  trophyContainer.style.width = '100%';
+  trophyContainer.style.paddingLeft= "1rem";
+});
+
+//-----------------ProgressBar evolutive ---------------//
+const progressBar = document.querySelector('.progress-bar')
+const rocketClicker = document.querySelector('#rocket-clicker')
+let progressBarLength = 0;
+let finalProgress = 20;
+let numberOfStarDust = 0;
+
+// console.log(rocketClicker);
+function setUpProgressBar(){
+  console.log(progressBarLength)
+  progressBarLength = progressBarLength + (100 / finalProgress);
+  if(numberOfStarDust< finalProgress){
+      // valeur de la longueur de ma progress bar = ancienne valeur + [(100% / valeur finale) =partager le 100% en (valeur finale) part égale, ce qui vaut à 0.5% par part de ce cas]
+     
+     progressBar.style.height=`${progressBarLength}%`;
+           console.log('Test1');
+
+    }else if(numberOfStarDust === finalProgress){
+      progressBarLength = 0;
+      numberOfStarDust = 0
+      finalProgress= finalProgress*2;
+      console.log('Bravo');
+    };
+}
+function voidCounting(){
+  numberOfStarDust++;
+}
+
+rocketClicker.addEventListener('click',setUpProgressBar);
+rocketClicker.addEventListener('click',voidCounting)

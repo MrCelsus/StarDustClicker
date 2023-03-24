@@ -6,6 +6,13 @@
     max-width: 768px;
 }
 
+@media screen and (max-width: 768px) {
+
+    .trophy-container{
+    display: none;
+}
+}
+
 @media screen and (min-width: 768px) {
     * {
         max-width: 1980px;
@@ -40,6 +47,27 @@
         grid-area: 1 / 2 / 3 / 3;
     }
 
+    .trophy-object{
+        display: inline-block;
+    }
+
+    .menuShop{
+        display: none;
+        }
+    
+    .menuTrophy{
+        display: none;
+    }
+
+    .trophy-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        font-family: 'fira Sans', sans-serif;
+        width: 100%; 
+        padding-left: 1rem;
+    
+    }
     /* #vacuum-name,
     #fueltank-name,
     #wings-name,
@@ -107,14 +135,6 @@ body {
     background: linear-gradient(180deg, hsla(213, 100%, 45%, 0.2) 0%, hsla(0, 0%, 0%, 0.2) 100%);
 }
 
-.menuShop {
-    display: block;
-}
-
-.menuTrophy {
-    display: none;
-}
-
 .vacuum,
 .fuel-tank,
 .wings,
@@ -136,6 +156,8 @@ body {
     padding-right: 1rem;
 
 }
+
+
 
 #vacuum img,
 #fuel-tank img,
@@ -186,15 +208,9 @@ body {
     align-items: center;
 }
 
-.trophy-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    font-family: 'fira Sans', sans-serif;
-    width: 100%;
-    padding-left: 1rem;
 
-}
+
+ 
 
 
 .trophy {
@@ -279,7 +295,7 @@ body {
 
 .container-bar .progress-bar {
     position: absolute;
-    height: 75%;
+    /* height: 75%; */
     background-color: blue;
     width: 100%;
     border-radius: 15px;

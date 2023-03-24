@@ -28,18 +28,18 @@ TROPHY
 JAUGE 
 
 -> Pourcentage de progression du niveau de poussière requise pour le prochain trophy */
-const boutique = document.querySelector('.shop-object');
-const trophé = document.querySelector('.trophy-container');
+const shopObject = document.querySelector('.shop-object');
+const trophyContainer = document.querySelector('.trophy-container');
 
-const pitié = document.querySelector('.menuShop');
-const stp = document.querySelector('.menuTrophy');
+const menuShop = document.querySelector('.menuShop');
+const menuTrophy = document.querySelector('.menuTrophy');
 
-pitié.addEventListener('click', function(){
-  boutique.style.display = flex;
-  trophé.style.display = none;
+menuShop.addEventListener('click', function(){
+  shopObject.style.display = flex;
+  shopContainer.style.display = none;
 });
 
-stp.addEventListener('click', function(){
-  boutique.style.display = none;
-  trophé.style.display = flex;
+menuTrophy.addEventListener('click', function(){
+  shopObject.style.display = none;
+  menuContainer.style.display = flex;
 });
