@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    
     <header>
         <!-------------- FIRST BIG BLOCK = TITLE  -------------->
         <!-- First BLOCK = TITLE -->
@@ -27,32 +28,33 @@
         <!-- Second Block = SHOP -->
         <div class=shop-container>
             <div class="menu">
-                <button class="menuShop">SHOP</button>
-                <button class="menuTrophy">TROPHY</button>
+                <button class="menuShop">Shop</button>
+                <h2>Shop</h2>
+                <button class="menuTrophy">Trophy</button>
             </div>
             <div class="shop-object">
                 <div class="vacuum" onclick="levelUpVaccum()">
-                    <img src="assets/Shop/vaccum.png" alt="Vaccum" height="40px" >
+                    <img src="assets/Shop/vaccum.png" alt="Vaccum" >
                     <p id=vacuum-name>Vacuum</p>
-                    <p id="vaccum-price"><span style="color:goldenrod">SD</span></p>
+                    <p class="price"><span style="color:goldenrod">SD</span></p>
                     <p class="count">0</p>
                 </div>
                 <div class="fuel-tank" onclick="levelUpFuelTank()">
-                    <img src="assets/Shop/fuel_tank.png" alt="Fuel-tank" height="40px">
+                    <img src="assets/Shop/fuel_tank.png" alt="Fuel-tank">
                     <p id=fueltank-name>Fuel Tank</p>
-                    <p id="fueltank-price"><span style="color:goldenrod">SD</span></p>
+                    <p class="price"><span style="color:goldenrod">SD</span></p>
                     <p class="count">0</p>
                 </div>
                 <div class="wings" onclick="levelUpWings()">
-                    <img src="assets/Shop/wings.png" alt="Wings" height="40px">
+                    <img src="assets/Shop/wings.png" alt="Wings">
                     <p id=wings-name>Wings</p>
-                    <p id="wings-price"><span style="color:goldenrod">SD</span></p>
+                    <p class="price"><span style="color:goldenrod">SD</span></p>
                     <p class="count">0</p>
                 </div>
                 <div class="reactor" onclick="levelUpReactor()">
-                    <img src="assets/Shop/reactor.png" alt="Reactor" height="40px">
+                    <img src="assets/Shop/reactor.png" alt="Reactor">
                     <p id=reactor-name>Reactor</p>
-                    <p id="reactor-price"><span style="color:goldenrod">SD</span></p>
+                    <p class="price"><span style="color:goldenrod">SD</span></p>
                     <p class="count">0</p>
                 </div>
             </div>
@@ -60,6 +62,7 @@
         <!-- Third Block = TROPHY -->
 
         <div class=trophy-container>
+            <h2>Trophy</h2>
             <div class=trophy>
                 <img src="assets/Planets/planet_4.png" alt="Earth">
                 <h3>Pluton</h3>
@@ -102,30 +105,32 @@
             </div>
         </div>
         <!--------------------------- THIRD BIG BLOCK = ROCKET ------------------------------------------------->
-        <div class="rocket-container">
+        
             <!-- Fourth Block = COUNTER  -->
             <div class="counter">
                 <h2 id="Dust-counter"><img src="/assets/star.png" alt="stardust" height="40px" id="star-dust"></h2>
-                <h3 id="counter-per-second">1200 per Second</h3>
+                <h3 id="counter-per-second"></h3>
             </div>
             <div class="rocket-progress">
                 <!-- Fifth BLOCK = ROCKET CLICK = Laure-->
                 <div class="rocket-part">
-                    <img src="assets/rocket1.png" alt="rocket" height="350px" onclick="counting(amountperclick)">
+                  <button><img src="assets/rocket1.png" alt="rocket" onclick="counting(amountperclick)"></button>
                 </div>
                 
 
-
+                <div class="bar">
                 <!-- Sixth BLOCK = PROGRESS BAR  -->
                 <div class="container-bar">
                     <div class="progress-bar"></div>
                 </div>
             </div>
-        </div>
-        <button id="reset" onclick="reset()">Reset</button>
+            
+           
+            
+        <!-- <button id="reset" onclick="reset()">Reset</button> -->
     </main>
-    <footer>
-    </footer>
+   
+    
     <script src="stardust.js"></script>
 </body>
 
