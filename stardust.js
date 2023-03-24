@@ -4,13 +4,15 @@ const dustCounter =document.getElementById('Dust-counter');
 const counterpersecond= document.getElementById('counter-per-second');
 const count=document.getElementsByClassName('count'); 
 const price=document.getElementsByClassName('price'); 
+const counterAnimation= document.getElementById('animation') 
+ 
 
 
 
 let numbStarDust = 0;
 let clicksecond =50; 
 let amountperclick = 1; 
-let amountpersecond =10; 
+let amountpersecond =1; 
 let numbVacuum = 0; 
 let numbFuelTank =0;
 let numbWings =0;
@@ -29,13 +31,21 @@ reactorPrice.innerHTML=500;
 
 const counting =(amountperclick) => {
   numbStarDust=numbStarDust +amountperclick ;
-  dustCounter.innerText = numbStarDust;
+  dustCounter.innerText = numbStarDust; 
+  console.log(amountperclick); 
+  counterAnimation.innerHTML= (`+ ${amountperclick} / per click`); 
 }
 
 const reset = () => {
   numbStarDust = 0; 
   dustCounter.innerText = numbStarDust;   
 }; 
+
+ setInterval(function () {
+  numbStarDust=numbStarDust + amountpersecond; 
+  dustCounter.innerText=numbStarDust; 
+  counterpersecond.innerHTML= (amountpersecond + " / second");
+}, 1000);
 
 
 
@@ -100,11 +110,7 @@ const levelUpReactor = () => {
 }
 }
 
-setInterval(function () {
-  numbStarDust=numbStarDust + amountpersecond; 
-  dustCounter.innerText=numbStarDust; 
-  counterpersecond.innerHTML= amountpersecond + " / second"
-}, 1000);
+ 
 
 //       FOR SHOP ==> Lucas
 const shopObject =[
@@ -173,36 +179,34 @@ menuTrophy.addEventListener('click', function(){
   trophyContainer.style.margin = "0 auto";
   trophyContainer.style.fontFamily = "'fira Sans', sans-serif";
   trophyContainer.style.width = '100%';
-  trophyContainer.style.paddingLeft= "1rem";
+  trophyContainer.style.paddingLeft= '0.5rem';
+  trophyContainer.style.paddingTop= '1rem';
+  trophyContainer.style.fontSize= '1rem';
 });
 
 //-----------------ProgressBar evolutive ---------------//
 const progressBar = document.querySelector('.progress-bar')
 const rocketClicker = document.querySelector('#rocket-clicker')
 let progressBarLength = 0;
-let finalProgress = 20;
+let finalProgress = 0;
 let numberOfStarDust = 0;
+const planets= [1000,25000,55000,750000,1250000,2250000,3250000,8500000];
+const imgPlanet = document.getElementById(`imgPlanet${finalProgress}`)
 
-// console.log(rocketClicker);
 function setUpProgressBar(){
-  console.log(progressBarLength)
-  progressBarLength = progressBarLength + (100 / finalProgress);
-  if(numberOfStarDust< finalProgress){
-      // valeur de la longueur de ma progress bar = ancienne valeur + [(100% / valeur finale) =partager le 100% en (valeur finale) part égale, ce qui vaut à 0.5% par part de ce cas]
-     
+  progressBarLength = progressBarLength + (100 / planets[finalProgress]);
+  if(numberOfStarDust< planets[finalProgress]){
      progressBar.style.height=`${progressBarLength}%`;
-           console.log('Test1');
-
-    }else if(numberOfStarDust === finalProgress){
+     
+    }else if(numberOfStarDust === planets[finalProgress]){
       progressBarLength = 0;
-      numberOfStarDust = 0
-      finalProgress= finalProgress*2;
-      console.log('Bravo');
+      numberOfStarDust = 0;
+      imgPlanet.classList.add('highlight');
+      finalProgress++;
     };
 }
 function voidCounting(){
   numberOfStarDust++;
 }
-
 rocketClicker.addEventListener('click',setUpProgressBar);
 rocketClicker.addEventListener('click',voidCounting)

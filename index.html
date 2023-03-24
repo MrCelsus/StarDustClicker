@@ -60,72 +60,76 @@
             </div>
         </div>
         <!-- Third Block = TROPHY -->
-<div class="trophy-object">
+
         <div class=trophy-container>
             <h2>Trophy</h2>
-            <div class=trophy>
+            <div class=trophy id="imgPlanet3">
                 <img src="assets/Planets/planet_4.png" alt="Earth">
                 <h3>Pluton</h3>
-                <p>7 500 000 <span>SD</span></p>
+                <p>35 000 <span>SD</span></p>
             </div>
-            <div class=trophy>
+            <div class=trophy id="imgPlanet2">
                 <img src="assets/Planets/planet_3.png" alt="Earth">
                 <h3>Vénus</h3>
-                <p>5 500 000 <span>SD</span></p>
+                <p>30 000 <span>SD</span></p>
             </div>
-            <div class=trophy>
+            <div class=trophy id="imgPlanet1">
                 <img src="assets/Planets/Planet_2.png" alt="Earth">
                 <h3>Moon</h3>
-                <p>2 500 000 <span>SD</span></p>
+                <p>25 000 <span>SD</span></p>
             </div>
-            <div class=trophy>
+            <div class=trophy id="imgPlanet0">
                 <img src="assets/Planets/planet_1.png" alt="Earth" onclick="colorChanger">
                 <h3>Earth</h3>
-                <p>100<span>SD</span></p>
+                <p>10 000 <span>SD</span></p>
             </div>
-            <div class=trophy>
+            <div class=trophy id="imgPlanet4">
                 <img src="assets/Planets/planet_5.png" alt="Earth">
                 <h3>Mars</h3>
-                <p>12 250 000 <span>SD</span></p>
+                <p>50 000 <span>SD</span></p>
             </div>
-            <div class=trophy>
+            <div class=trophy id="imgPlanet5">
                 <img src="assets/Planets/planet_6.png" alt="Earth">
                 <h3>Neptune</h3>
-                <p>22 500 000 <span>SD</span></p>
+                <p>60 000 <span>SD</span></p>
             </div>
-            <div class=trophy>
+            <div class=trophy id="imgPlanet6">
                 <img src="assets/Planets/planet_7.png" alt="Earth">
                 <h3>Mercure</h3>
-                <p>50 750 000 <span>SD</span></p>
+                <p>90 000 <span>SD</span></p>
             </div>
-            <div class=trophy>
+            <div class=trophy id="imgPlanet7">
                 <img src="assets/Planets/planet_8.png" alt="Earth">
                 <h3>Uranus</h3>
-                <p>100 000 000 <span>SD</span></p>
+                <p>100 000 <span>SD</span></p>
             </div>
         </div>
-    </div>
         <!--------------------------- THIRD BIG BLOCK = ROCKET ------------------------------------------------->
         
             <!-- Fourth Block = COUNTER  -->
             <div class="counter">
                 <h2 id="Dust-counter"><img src="/assets/star.png" alt="stardust" height="40px" id="star-dust"></h2>
                 <h3 id="counter-per-second"></h3>
+                <p id = animation></p>
             </div>
             <div class="rocket-progress">
                 <!-- Fifth BLOCK = ROCKET CLICK = Laure-->
-                <div class="rocket-part">
-                  <button><img id="rocket-clicker" src="assets/rocket1.png" alt="rocket" onclick="counting(amountperclick)" ></button>
+                <div class="rocket-part">    
+                  <button><img src="assets/rocket1.png" alt="rocket" id="rocket-clicker" onclick="counting(amountperclick)"></button>
                 </div>
                 
 
                 <div class="bar">
                 <!-- Sixth BLOCK = PROGRESS BAR  -->
-                <div class="container-bar">
-                    <div class="progress-bar"></div>
+                
+                    <div class="container-bar">
+                    
+                        <div class="progress-bar"></div>
+                    </div>
                 </div>
-            </div>
-        </div>
+           </div>
+           
+            
         <!-- <button id="reset" onclick="reset()">Reset</button> -->
     </main>
    
