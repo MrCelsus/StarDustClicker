@@ -13,7 +13,7 @@
 }
 }
 
-@media screen and (min-width: 768px) {
+
     * {
         max-width: 1980px;
     }
@@ -68,7 +68,7 @@
         padding-left: 1rem;
     
     }
-    /* #vacuum-name,
+ #vacuum-name,
     #fueltank-name,
     #wings-name,
     #reactor-name {
