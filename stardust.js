@@ -191,7 +191,6 @@ let progressBarLength = 0;
 let finalProgress = 0;
 let numberOfStarDust = 0;
 const planets= [100,250,550,750,1250,2250,3250,8500];
-const imgPlanet = document.getElementById(`imgPlanet${finalProgress}`)
 
 function setUpProgressBar(){
   progressBarLength = progressBarLength + (100 / planets[finalProgress]);
@@ -201,6 +200,7 @@ function setUpProgressBar(){
     }else if(numberOfStarDust === planets[finalProgress]){
       progressBarLength = 0;
       numberOfStarDust = 0;
+      const imgPlanet = document.getElementById(`imgPlanet${finalProgress}`)
       imgPlanet.classList.add('highlight');
       finalProgress++;
     };
